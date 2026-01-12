@@ -1,0 +1,50 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 20,
+  "spacing": 0,
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["hyprland/window"],
+  "modules-right": [
+    "battery",
+    "custom/separator",
+    "wireplumber",
+    "custom/separator",
+    "network",
+    "custom/separator",
+    "clock"
+  ],
+  "hyprland/workspaces": {
+    "format": "{id}",
+    "on-click": "activate",
+    "all-outputs": true,
+    "persistent-workspaces": {
+      "*": 5
+    }
+  },
+  "hyprland/window": {
+    "format": "{}",
+    "max-length": 50,
+    "separate-outputs": true
+  },
+  "custom/separator": {
+    "format": "|",
+    "tooltip": false
+  },
+  "clock": {
+    "format": "{:%H:%M}",
+    "tooltip": false
+  },
+  "battery": {
+    "format": "BAT {capacity}%",
+    "tooltip": false
+  },
+  "wireplumber": {
+    "format": "VOL {volume}%",
+    "tooltip": false
+  },
+  "network": {
+    "format": "{ipaddr}",
+    "tooltip": false
+  }
+}
