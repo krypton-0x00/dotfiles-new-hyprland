@@ -1,38 +1,21 @@
-[general]
-framerate = 60
-autosens = 1
-bars = 20 
-mono = yes
+[color]
 
-[input]
-method = pulse
+# Colors can be one of seven predefined: black, blue, cyan, green, magenta, red, white, yellow.
+# Or defined by hex code '#rrggbb' (hex code must be within ''). 
 
-[output]
-method = ncurses
-channels = mono
-foreground = gradient
+background = '#000000'
+foreground = '#ff0000'
 
-[gradient]
-color_1 = red
-color_2 = yellow
-color_3 = red
-
-
-[smoothing]
-integral = 60
-monstercat = 0
-waves = 0
-
-[eq]
-1 = 1
-2 = 1
-3 = 1
-4 = 1
-5 = 1
-6 = 1
-7 = 1
-8 = 1
-
-[style]
-style = blocks
-
+# Gradient mode, only hex defined colors are supported,
+# background must also be defined in hex or remain commented out. 
+# 1 = on, 0 = off. 
+# Warning: for certain terminal emulators cava will not able to restore color palette after exit,
+# Use at your own risk.
+gradient = 1
+gradient_count = 6
+gradient_color_1 = '#330000'
+gradient_color_2 = '#660000'
+gradient_color_3 = '#990000'
+gradient_color_4 = '#cc0000'
+gradient_color_5 = '#ff0000'
+gradient_color_6 = '#ff3333'

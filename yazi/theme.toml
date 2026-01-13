@@ -1,0 +1,119 @@
+# A red and black theme for Yazi file manager
+# Save to ~/.config/yazi/theme.toml
+
+[manager]
+cwd = { fg = "red" }
+
+# Hovered
+hovered         = { fg = "black", bg = "red" }
+preview_hovered = { underline = true }
+
+# Find
+find_keyword  = { fg = "lightred", italic = true }
+find_position = { fg = "red", bg = "reset", italic = true }
+
+# Marker
+marker_selected = { fg = "red", bg = "red" }
+marker_copied   = { fg = "lightred", bg = "lightred" }
+marker_cut      = { fg = "darkred", bg = "darkred" }
+
+# Tab
+tab_active   = { fg = "black", bg = "red", bold = true }
+tab_inactive = { fg = "red", bg = "reset" }
+tab_width    = 1
+
+# Border
+border_symbol = "│"
+border_style  = { fg = "red" }
+
+# Highlighting
+syntect_theme = ""
+
+[status]
+separator_open  = ""
+separator_close = ""
+separator_style = { fg = "red", bg = "red" }
+
+# Mode
+mode_normal = { fg = "black", bg = "red", bold = true }
+mode_select = { fg = "black", bg = "lightred", bold = true }
+mode_unset  = { fg = "black", bg = "red", bold = true }
+
+# Progress
+progress_label  = { fg = "white", bold = true }
+progress_normal = { fg = "red", bg = "reset" }
+progress_error  = { fg = "lightred", bg = "reset" }
+
+# Permissions
+permissions_t = { fg = "red" }
+permissions_r = { fg = "lightred" }
+permissions_w = { fg = "red" }
+permissions_x = { fg = "lightred" }
+permissions_s = { fg = "darkred" }
+
+[select]
+border   = { fg = "red" }
+active   = { fg = "black", bg = "red" }
+inactive = { fg = "red" }
+
+[input]
+border   = { fg = "red" }
+title    = {}
+value    = {}
+selected = { reversed = true }
+
+[completion]
+border   = { fg = "red" }
+active   = { bg = "reset", fg = "red", bold = true }
+inactive = {}
+
+icon_file    = ""
+icon_folder  = ""
+icon_command = ""
+
+[tasks]
+border  = { fg = "red" }
+title   = {}
+hovered = { underline = true }
+
+[which]
+mask            = { bg = "black" }
+cand            = { fg = "red" }
+rest            = { fg = "darkgray" }
+desc            = { fg = "lightred" }
+separator       = "  "
+separator_style = { fg = "red" }
+
+[help]
+on      = { fg = "red" }
+exec    = { fg = "lightred" }
+desc    = { fg = "gray" }
+hovered = { bg = "reset", fg = "red", bold = true }
+footer  = { fg = "darkgray", bg = "black" }
+
+[filetype]
+
+rules = [
+	# Images
+	{ mime = "image/*", fg = "lightred" },
+	
+	# Videos
+	{ mime = "video/*", fg = "red" },
+	{ mime = "audio/*", fg = "lightred" },
+	
+	# Archives
+	{ mime = "application/zip",             fg = "red" },
+	{ mime = "application/gzip",            fg = "red" },
+	{ mime = "application/x-tar",           fg = "red" },
+	{ mime = "application/x-bzip",          fg = "red" },
+	{ mime = "application/x-bzip2",         fg = "red" },
+	{ mime = "application/x-7z-compressed", fg = "red" },
+	{ mime = "application/x-rar",           fg = "red" },
+	
+	# Documents
+	{ mime = "application/pdf", fg = "lightred" },
+	
+	# Fallback
+	{ name = "*", fg = "red" },
+	{ name = "*/", fg = "red", bold = true }
+]
