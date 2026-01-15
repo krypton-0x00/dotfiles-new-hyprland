@@ -1,6 +1,6 @@
-# dotfiles-new-hyprland
+# Hyprland Dotfiles
 
-My personal Hyprland + Wayland config with:
+My personal Hyprland dots with red theme.
 - Hyprland
 - Waybar
 - Kitty
