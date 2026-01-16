@@ -1,5 +1,5 @@
 # Hyprland Dotfiles
-
+## Note: the install.sh script is only to install dependencies.
 My personal Hyprland dots with red theme.
 - Hyprland
 - Waybar
