@@ -93,12 +93,14 @@ find . -maxdepth 1 -mindepth 1 \
   ! -name "packages.lst" \
   ! -name "security-pkgs.lst" \
   | sed 's|^\./||' \
-  | xargs -I{} sh -c "
-    src=\"$REPO_DIR/{}\"
-    dst=\"$HOME/.config/{}\"
-    echo ln -sf \"$src\" \"$dst\"
-    ln -sf \"$src\" \"$dst\"
-  "
+  | xargs -I{} bash -c "
+        src=\"$REPO_DIR/{}\"
+        dst=\"$HOME/.config/{}\"
+
+        echo ln -sf \"\$src\" \"\$dst\"
+        ln -sf \"\$src\" \"\$dst\"
+    "
+
 
 
 echo "=== Dotfiles setup complete ==="
