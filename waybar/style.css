@@ -12,6 +12,22 @@
   background: transparent;
 }
 
+#mpris {
+  padding: 0 8px;
+  margin: 0 5px;
+  /* background: rgba(255, 0, 0, 0.15); */
+  color: #ffffff;
+  font-weight: 500;
+}
+
+#mpris.paused {
+  opacity: 0.6;
+}
+
+#mpris.playing {
+  color: #ff4444;
+}
+
 
 #waybar {
   background: #000000;
