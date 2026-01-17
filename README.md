@@ -2,7 +2,8 @@
 
 This repository contains a Red-Black Themed Hyprland configuration. 
 
----
+> **Note:** This script is intended for personal use and may not work on all systems. Review before running.
+
 
 ## Demo
 
@@ -13,16 +14,23 @@ https://jmp.sh/Ey29okW54BcgsAG1IBfS
 ---
 
 ## Installation
+This Script Assumes that you have a fresh minimal arch install.
+So if you are on a pre-existing setup then make sure to backup your `.config` folder and then remove it.
+```sh
+# Only run this if you know what you are doing.
+rm -rf ~/.config
+```
+
 Clone the repository:
 
-```
+```sh
 git clone https://github.com/krypton-0x00/dotfiles-new-hyprland.git
 cd dotfiles-new-hyprland
 ```
 
 Run the installer:
 
-```
+```sh
 ./install.sh
 ```
 
@@ -41,7 +49,7 @@ The installer performs the following:
 
 The repository includes a package list:
 
-```
+```sh
 packages.lst
 ```
 
