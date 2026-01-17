@@ -1,0 +1,141 @@
+/* =========================
+   RED & BLACK DISCORD THEME
+   ========================= */
+
+:root {
+    --background-primary: #000000;
+    --background-secondary: #0d0d0d;
+    --background-tertiary: #1a1a1a;
+    --background-accent: #1f0000;
+    --background-hover: #330000;
+    
+    --text-normal: #e0e0e0;
+    --text-muted: #888888;
+    --text-link: #ff4d4d;
+    
+    --interactive-active: #ff0000;
+    --interactive-hover: #b30000;
+    --interactive-accent: #ff0000;
+    
+    --header-primary: #ff0000;
+    --header-secondary: #ff4d4d;
+    
+    --scrollbar-thumb: #330000;
+    --scrollbar-track: #0d0d0d;
+}
+
+/* Main background */
+.theme-dark {
+    background-color: var(--background-primary) !important;
+    color: var(--text-normal) !important;
+}
+
+/* Sidebar */
+.sidebar-2K8pFh,
+.channel-2QD9_O {
+    background-color: var(--background-secondary) !important;
+}
+
+/* Server list + icons */
+.guilds-wrapper-3SfDLg {
+    background-color: var(--background-tertiary) !important;
+}
+
+/* Text channels */
+.container-2sjPye,
+.chat-3bRxxu {
+    background-color: var(--background-primary) !important;
+}
+
+/* Message bubbles */
+.message-2qnXI6 {
+    background-color: var(--background-tertiary) !important;
+    border-radius: 5px;
+}
+
+/* Hover states */
+.message-2qnXI6:hover,
+.channel-2QD9_O:hover,
+.guild-1EfMgF:hover {
+    background-color: var(--background-hover) !important;
+}
+
+/* Text colors */
+.title-1q9dwG,
+.username-3AInst,
+.markup-2BOw-j,
+.content-2mQqc9 {
+    color: var(--text-normal) !important;
+}
+
+/* Muted text */
+.secondaryText-3HsZyN {
+    color: var(--text-muted) !important;
+}
+
+/* Mentions & Links */
+.mention,
+a,
+a:hover {
+    color: var(--text-link) !important;
+}
+
+/* Accents & highlights */
+.guildName-1JF9aL,
+.channelName-17xdPp,
+.header-23xsNx {
+    color: var(--header-primary) !important;
+}
+
+/* Buttons */
+.button-38aScr,
+.button-3h3bO0 {
+    background-color: var(--interactive-active) !important;
+    color: var(--text-normal) !important;
+}
+
+/* Hover button */
+.button-38aScr:hover,
+.button-3h3bO0:hover {
+    background-color: var(--interactive-hover) !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--scrollbar-track) !important;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb) !important;
+    border-radius: 4px;
+}
+
+/* Divider lines */
+.divider-2eR5iL {
+    background-color: var(--background-hover) !important;
+}
+
+/* Text Input */
+.textArea-2Spzkt,
+.input-2g-os5 {
+    background-color: var(--background-accent) !important;
+    color: var(--text-normal) !important;
+}
+
+/* Placeholders */
+.input-2g-os5::placeholder {
+    color: var(--text-muted) !important;
+}
+
+/* Emojis */
+.emoji, .emoji:hover {
+    filter: brightness(1.1);
+}
+
+/* Selected channel */
+.channelName-17xdPp.selected-3G0fJX {
+    color: var(--interactive-active) !important;
+}
+

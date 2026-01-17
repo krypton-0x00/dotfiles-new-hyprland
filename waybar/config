@@ -12,13 +12,17 @@
     "hyprland/window"
   ],
 
-  "modules-right": [
+   "modules-right": [
     "tray",
     "battery",
     "custom/separator",
     "wireplumber",
     "custom/separator",
     "network",
+    "custom/separator",
+    "cpu",
+    "custom/separator",
+    "memory",
     "custom/separator",
     "clock"
   ],
@@ -63,6 +67,23 @@
   "tray": {
     "icon-size": 14,
     "spacing": 6
+  },
+  
+  "cpu": {
+    "format": "CPU {usage}%",
+    "tooltip": false
+  },
+  "memory": {
+    "format": "RAM {used}G",
+    "tooltip": false
+  },
+  "gpu": {
+    "exec": "nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits",
+    "interval": 3,
+    "format": "GPU {}%",
+    "tooltip": false
   }
+
+
 }
 

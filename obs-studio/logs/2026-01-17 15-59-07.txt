@@ -1,0 +1,170 @@
+15:59:07.466: Platform: Wayland
+15:59:07.466: CPU Name: Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz
+15:59:07.466: CPU Speed: 3200.291MHz
+15:59:07.467: Physical Cores: 6, Logical Cores: 12
+15:59:07.467: Physical Memory: 15640MB Total, 9057MB Free
+15:59:07.467: Kernel Version: Linux 6.12.65-1-lts
+15:59:07.467: Distribution: "Arch Linux" Unknown
+15:59:07.467: Desktop Environment: Hyprland
+15:59:07.467: Session Type: wayland
+15:59:07.472: Current Date/Time: 2026-01-17, 15:59:07
+15:59:07.472: Browser Hardware Acceleration: true
+15:59:07.472: Qt Version: 6.10.1 (runtime), 6.10.1 (compiled)
+15:59:07.472: Portable mode: false
+15:59:07.558: OBS 32.0.2 (linux)
+15:59:07.558: ---------------------------------
+15:59:07.559: ---------------------------------
+15:59:07.559: audio settings reset:
+15:59:07.559: 	samples per sec: 48000
+15:59:07.559: 	speakers:        2
+15:59:07.559: 	max buffering:   960 milliseconds
+15:59:07.559: 	buffering type:  dynamically increasing
+15:59:07.562: ---------------------------------
+15:59:07.562: Initializing OpenGL...
+15:59:07.562: Using EGL/Wayland
+15:59:07.654: Initialized EGL 1.5
+15:59:07.671: Loading up OpenGL on adapter Intel Mesa Intel(R) UHD Graphics (CML GT2)
+15:59:07.671: OpenGL loaded successfully, version 4.6 (Core Profile) Mesa 25.3.3-arch1.2, shading language 4.60
+15:59:07.706: ---------------------------------
+15:59:07.706: video settings reset:
+15:59:07.706: 	base resolution:   1920x1080
+15:59:07.706: 	output resolution: 1280x720
+15:59:07.706: 	downscale filter:  Bicubic
+15:59:07.706: 	fps:               30/1
+15:59:07.706: 	format:            NV12
+15:59:07.706: 	YUV mode:          Rec. 709/Partial
+15:59:07.706: NV12 texture support enabled
+15:59:07.706: P010 texture support not available
+15:59:07.712: Audio monitoring device:
+15:59:07.712: 	name: Default
+15:59:07.712: 	id: default
+15:59:07.713: ---------------------------------
+15:59:07.714: Failed to load 'en-US' text for module: 'decklink-captions.so'
+15:59:07.715: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+15:59:07.716: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+15:59:07.716: Failed to initialize module 'decklink.so'
+15:59:07.882: [pipewire] Available capture sources:
+15:59:07.882: [pipewire]     - Monitor source
+15:59:07.882: [pipewire]     - Window source
+15:59:07.891: v4l2loopback not installed, virtual camera not registered
+15:59:07.913: LIBVA_DRIVER_NAME variable is set, this could prevent FFmpeg VAAPI from working correctly
+15:59:08.214: VAAPI: API version 1.22
+15:59:08.295: FFmpeg VAAPI H264 encoding supported
+15:59:08.622: FFmpeg VAAPI AV1 encoding supported
+15:59:08.927: FFmpeg VAAPI HEVC encoding supported
+15:59:09.153: [obs-nvenc] NVENC version: 13.0 (compiled) / 13.0 (driver), CUDA driver version: 13.10, AV1 supported: false
+15:59:10.370: [obs-websocket] [obs_module_load] you can haz websockets (Version: 5.6.3 | RPC Version: 1)
+15:59:10.370: [obs-websocket] [obs_module_load] Qt version (compile-time): 6.10.1 | Qt version (run-time): 6.10.1
+15:59:10.370: [obs-websocket] [obs_module_load] Linked ASIO Version: 103600
+15:59:10.371: [obs-websocket] [Config::Load] Existing configuration not found, using defaults.
+15:59:10.371: [obs-websocket] [Config::Load] (FirstLoad) Generating new server password.
+15:59:10.377: [obs-websocket] [obs_module_load] Module loaded.
+15:59:10.381: ---------------------------------
+15:59:10.381:   Loaded Modules:
+15:59:10.381:     text-freetype2.so
+15:59:10.381:     rtmp-services.so
+15:59:10.381:     obs-x264.so
+15:59:10.381:     obs-websocket.so
+15:59:10.381:     obs-webrtc.so
+15:59:10.381:     obs-vst.so
+15:59:10.381:     obs-transitions.so
+15:59:10.381:     obs-qsv11.so
+15:59:10.381:     obs-outputs.so
+15:59:10.381:     obs-nvenc.so
+15:59:10.381:     obs-libfdk.so
+15:59:10.381:     obs-filters.so
+15:59:10.381:     obs-ffmpeg.so
+15:59:10.381:     linux-v4l2.so
+15:59:10.381:     linux-pulseaudio.so
+15:59:10.381:     linux-pipewire.so
+15:59:10.381:     linux-jack.so
+15:59:10.381:     linux-capture.so
+15:59:10.381:     linux-alsa.so
+15:59:10.381:     image-source.so
+15:59:10.381:     frontend-tools.so
+15:59:10.381:     decklink-output-ui.so
+15:59:10.381:     decklink-captions.so
+15:59:10.381: ---------------------------------
+15:59:10.381: ---------------------------------
+15:59:10.381: Available Encoders:
+15:59:10.381:   Video Encoders:
+15:59:10.381: 	- ffmpeg_svt_av1 (SVT-AV1)
+15:59:10.381: 	- ffmpeg_aom_av1 (AOM AV1)
+15:59:10.381: 	- ffmpeg_vaapi_tex (FFmpeg VAAPI H.264)
+15:59:10.381: 	- av1_ffmpeg_vaapi_tex (FFmpeg VAAPI AV1)
+15:59:10.381: 	- hevc_ffmpeg_vaapi_tex (FFmpeg VAAPI HEVC)
+15:59:10.381: 	- obs_nvenc_h264_tex (NVIDIA NVENC H.264)
+15:59:10.381: 	- obs_nvenc_hevc_tex (NVIDIA NVENC HEVC)
+15:59:10.381: 	- obs_x264 (x264)
+15:59:10.381:   Audio Encoders:
+15:59:10.381: 	- ffmpeg_aac (FFmpeg AAC)
+15:59:10.381: 	- ffmpeg_opus (FFmpeg Opus)
+15:59:10.381: 	- ffmpeg_pcm_s16le (FFmpeg PCM (16-bit))
+15:59:10.381: 	- ffmpeg_pcm_s24le (FFmpeg PCM (24-bit))
+15:59:10.381: 	- ffmpeg_pcm_f32le (FFmpeg PCM (32-bit float))
+15:59:10.381: 	- ffmpeg_alac (FFmpeg ALAC (24-bit))
+15:59:10.381: 	- ffmpeg_flac (FFmpeg FLAC (16-bit))
+15:59:10.381: 	- libfdk_aac (libfdk AAC)
+15:59:10.381: ==== Startup complete ===============================================
+15:59:10.386: No scene file found, creating default scene
+15:59:10.419: All scene data cleared
+15:59:10.419: ------------------------------------------------
+15:59:10.421: Switched to scene 'Scene'
+15:59:10.421: Created scene collection 'Untitled' (clean, Untitled.json)
+15:59:10.421: ------------------------------------------------
+15:59:12.963: [rtmp-services plugin] Successfully updated file 'services.json' (version 281)
+15:59:12.963: [rtmp-services plugin] Successfully updated package (version 281)
+15:59:13.552: Get on org.freedesktop.portal.Settings returned an invalid reply
+15:59:13.553: Get on org.freedesktop.portal.Settings returned an invalid reply
+15:59:13.553: Get on org.freedesktop.portal.Settings returned an invalid reply
+15:59:18.735: Get on org.freedesktop.portal.Settings returned an invalid reply
+15:59:18.874: Cannot open file '/home/zazzu/theme:Dark/Close.svg', because: No such file or directory
+15:59:18.874: Cannot open file '/home/zazzu/theme:Dark/Popout.svg', because: No such file or directory
+15:59:22.324: Get on org.freedesktop.portal.Settings returned an invalid reply
+15:59:22.480: Cannot open file '/home/zazzu/theme:Dark/Close.svg', because: No such file or directory
+15:59:22.480: Cannot open file '/home/zazzu/theme:Dark/Popout.svg', because: No such file or directory
+15:59:24.010: Get on org.freedesktop.portal.Settings returned an invalid reply
+15:59:24.167: Cannot open file '/home/zazzu/theme:Dark/Close.svg', because: No such file or directory
+15:59:24.167: Cannot open file '/home/zazzu/theme:Dark/Popout.svg', because: No such file or directory
+15:59:25.509: Get on org.freedesktop.portal.Settings returned an invalid reply
+15:59:25.643: Cannot open file '/home/zazzu/theme:Dark/Close.svg', because: No such file or directory
+15:59:25.643: Cannot open file '/home/zazzu/theme:Dark/Popout.svg', because: No such file or directory
+15:59:25.771: Settings changed (appearance)
+15:59:25.771: ------------------------------------------------
+15:59:41.262: PipeWire initialized
+15:59:41.267: User added source 'Screen Capture (PipeWire)' (pipewire-screen-capture-source) to scene 'Scene'
+15:59:41.284: [pipewire] Screencast session created
+15:59:42.405: [pipewire] Asking for monitor and window
+15:59:42.445: [pipewire] source selected, setting up screencast
+15:59:42.456: [pipewire] Server version: 1.4.9
+15:59:42.456: [pipewire] Library version: 1.4.9
+15:59:42.456: [pipewire] Header version: 1.4.9
+15:59:42.457: [pipewire] Created stream 0x5ed6b90b2350
+15:59:42.457: [pipewire] Stream 0x5ed6b90b2350 state: "connecting" (error: none)
+15:59:42.460: [pipewire] Playing stream 0x5ed6b90b2350
+15:59:42.460: [pipewire] Stream 0x5ed6b90b2350 state: "paused" (error: none)
+15:59:42.468: [pipewire] Negotiated format:
+15:59:42.468: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+15:59:42.468: [pipewire]     Modifier: 0x0
+15:59:42.468: [pipewire]     Size: 1920x1080
+15:59:42.468: [pipewire]     Framerate: 0/1
+15:59:42.471: [pipewire] Negotiated format:
+15:59:42.471: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+15:59:42.471: [pipewire]     Modifier: 0x100000000000004
+15:59:42.471: [pipewire]     Size: 1920x1080
+15:59:42.471: [pipewire]     Framerate: 0/1
+15:59:42.483: [pipewire] Stream 0x5ed6b90b2350 state: "streaming" (error: none)
+15:59:42.583: Cannot create EGLImage: Arguments are inconsistent (for example, a valid context requires buffers not supplied by a valid surface).
+15:59:42.583: [pipewire] Renegotiating stream
+15:59:42.584: [pipewire] Stream 0x5ed6b90b2350 state: "paused" (error: none)
+15:59:42.584: [pipewire] Negotiated format:
+15:59:42.584: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+15:59:42.584: [pipewire]     Modifier: 0x100000000000004
+15:59:42.584: [pipewire]     Size: 1920x1080
+15:59:42.584: [pipewire]     Framerate: 0/1
+15:59:42.588: [pipewire] Negotiated format:
+15:59:42.589: [pipewire]     Format: 8 (Spa:Enum:VideoFormat:BGRx)
+15:59:42.589: [pipewire]     Modifier: 0x100000000000002
+15:59:42.589: [pipewire]     Size: 1920x1080
+15:59:42.589: [pipewire]     Framerate: 0/1
+15:59:42.597: [pipewire] Stream 0x5ed6b90b2350 state: "streaming" (error: none)

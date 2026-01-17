@@ -1,0 +1,170 @@
+* {
+  all: unset;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 14px;
+}
+
+.notification-row {
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+.notification {
+  background: #000000;
+  border: 2px solid #ff0000;
+  border-radius: 8px;
+  margin: 8px;
+  padding: 12px;
+}
+
+.notification-content {
+  background: transparent;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.summary {
+  color: #ff0000;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.body {
+  color: #ffffff;
+  margin-top: 4px;
+}
+
+.control-center {
+  background: #000000;
+  border: 2px solid #ff0000;
+  border-radius: 12px;
+  margin: 8px;
+  padding: 12px;
+}
+
+.control-center-list {
+  background: transparent;
+}
+
+.control-center .notification {
+  background: #000000;
+  border: 1px solid #ff0000;
+}
+
+.notification-default-action:hover,
+.notification-action:hover {
+  background: rgba(255, 0, 0, 0.1);
+}
+
+.notification-default-action:active,
+.notification-action:active {
+  background: rgba(255, 0, 0, 0.2);
+}
+
+.close-button {
+  background: #ff0000;
+  color: #000000;
+  border-radius: 4px;
+  margin: 4px;
+  padding: 4px 8px;
+}
+
+.close-button:hover {
+  background: #cc0000;
+}
+
+.notification-action {
+  background: #000000;
+  border: 1px solid #ff0000;
+  color: #ff0000;
+  border-radius: 4px;
+  margin: 4px;
+  padding: 6px 12px;
+}
+
+.widget-title {
+  color: #ff0000;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 12px;
+}
+
+.widget-dnd {
+  background: #000000;
+  border: 1px solid #ff0000;
+  border-radius: 8px;
+  margin: 8px;
+  padding: 8px;
+}
+
+.widget-dnd > switch {
+  background: #000000;
+  border: 1px solid #ff0000;
+  border-radius: 4px;
+}
+
+.widget-dnd > switch:checked {
+  background: #ff0000;
+}
+
+.widget-label {
+  color: #ff0000;
+  margin: 8px;
+}
+
+.widget-mpris {
+  background: #000000;
+  border: 1px solid #ff0000;
+  border-radius: 8px;
+  margin: 8px;
+  padding: 8px;
+}
+
+.widget-mpris-player {
+  background: transparent;
+  padding: 8px;
+}
+
+.widget-mpris-title {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.widget-mpris-subtitle {
+  color: #ff6666;
+}
+
+button {
+  background: #000000;
+  border: 1px solid #ff0000;
+  color: #ff0000;
+  border-radius: 4px;
+  padding: 8px 16px;
+  margin: 4px;
+}
+
+button:hover {
+  background: rgba(255, 0, 0, 0.1);
+}
+
+button:active {
+  background: rgba(255, 0, 0, 0.2);
+}
+
+progressbar,
+progress,
+trough {
+  background: #000000;
+  border: 1px solid #ff0000;
+  border-radius: 4px;
+}
+
+progressbar progress {
+  background: #ff0000;
+}
+
+slider {
+  background: #ff0000;
+  border-radius: 50%;
+}
