@@ -136,7 +136,7 @@ info "=== Dotfiles setup complete ==="
 info "=== Installing Themes."
 if [ -x "$REPO_DIR/scripts/setup-themes.sh" ]; then
     info "[*] Running theme setup…"
-    "$REPO_DIR/setup-themes.sh"
+    "$REPO_DIR/scripts/setup-themes.sh"
 else
     warn "[!] setup-themes.sh not executable, fixing perms..."
     chmod +x "$REPO_DIR/scripts/setup-themes.sh"
@@ -164,6 +164,35 @@ case "$ans" in
         warn "[*] Skipping security tools."
         ;;
 esac
+# ===============================
+# Shell setup 
+# ===============================
+
+
+if command -v fish >/dev/null 2>&1; then
+    CURR_SHELL="$(basename "$SHELL")"
+    if [[ "$CURR_SHELL" != "fish" ]]; then
+        read -r -p "Switch default shell to fish? [y/N]: " ans
+        case "$ans" in
+            y|Y|yes|YES)
+                if ! grep -q "$(command -v fish)" /etc/shells; then
+                    echo "Adding fish to /etc/shells..."
+                    echo "$(command -v fish)" | sudo tee -a /etc/shells >/dev/null
+                fi
+                echo "Changing default shell to fish for user: $USER"
+                chsh -s "$(command -v fish)"
+                ;;
+            *)
+                echo "Skipping shell change."
+                ;;
+        esac
+    else
+        echo "Fish is already the default shell."
+    fi
+else
+    echo "Fish not installed — skipping shell setup."
+fi
+
 info "===All Done==="
 
 
