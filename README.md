@@ -1,6 +1,6 @@
 # Hyprland Dotfiles
 
-This repository contains a Red-Black Themed Hyprland configuration. 
+This repository contains a Red-Black themed Hyprland configuration.
 
 > **Note:** This script is intended for personal use and may not work on all systems. Review before running.
 
@@ -14,8 +14,12 @@ https://jmp.sh/Ey29okW54BcgsAG1IBfS
 ---
 
 ## Installation
-This Script Assumes that you have a fresh minimal arch install.
-So if you are on a pre-existing setup then make sure to backup your `.config` folder and then remove it.
+
+This script assumes a minimal Arch install.  
+If you are on an existing system, make sure to back up your configs before running.
+
+If you want to completely reset `.config` manually:
+
 ```sh
 # Only run this if you know what you are doing.
 rm -rf ~/.config
@@ -37,9 +41,9 @@ Run the installer:
 The installer performs the following:
 
 - Installs packages listed in `packages.lst` (using yay)
-- Sets up PipeWire audio
+- Sets up PipeWire audio (safe mode, handles Pulse/JACK conflicts)
 - Enables Bluetooth support
-- Symlinks configuration directories into `~/.config`
+- Backups existing configs and symlinks new ones into `~/.config`
 - Runs theme setup script
 - Optionally installs security tools
 
@@ -53,7 +57,8 @@ The repository includes a package list:
 packages.lst
 ```
 
-The installer reads this file and installs packages using yay automatically. So no need to worry about deps. 
+The installer reads this file and installs packages using `yay` automatically.  
+No need to worry about dependencies.
 
 ---
 
@@ -62,4 +67,8 @@ The installer reads this file and installs packages using yay automatically. So 
 - Symlinks are forced (`ln -sf`)
 - Script does not manage NVIDIA. If you want NVIDIA drivers and hardware setup, check [Linutil](https://github.com/ChrisTitusTech/linutil) by Chris Titus.
 - Repository is intended for personal workstation setup.
-- If the script fails check the error and manually edit the `install.sh` script for fixes, most likly its gonna cause by the `packages.lst`, coz sometimes your setup would already have a certain packages that will conflict will the installer, in that case remove the package manually from `packages.lst` or from your system and rerun the `install.sh`.
+- If the script fails, check the error and manually edit `install.sh` for fixes.  
+  Most likely the issue is caused by a package conflict from `packages.lst` on an existing system.  
+  In that case remove the package manually from `packages.lst` or uninstall it from your system and re-run `install.sh`.
+
+
