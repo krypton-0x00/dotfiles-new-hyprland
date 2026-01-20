@@ -1,2 +1,5 @@
 wireshark-qt
 tcpdump
+rustscan
+feroxbuster
+nmap

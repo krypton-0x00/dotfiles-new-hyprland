@@ -63,7 +63,7 @@
 
   "network": {
     "format": "{ipaddr}",
-    "tooltip": false
+    "tooltip": false,
   },
 
   "tray": {
